@@ -24,11 +24,13 @@ def main():
             if event.type == pygame.QUIT:
                 return
 
+
+        player.update(dt)
+
         screen.fill("black")
-
         player.draw(screen) #draw the player
-
         pygame.display.flip()
+
         elapsed_time = clock.tick(60) 
         dt = elapsed_time / 1000
 
