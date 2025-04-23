@@ -55,6 +55,13 @@ def main():
                 print("Game over!")
                 import sys
                 sys.exit()
+
+        # Check for collisions between bullets and asteroids
+        for asteroid in asteroids:
+            for shot in shots:
+                if pygame.sprite.collide_rect(asteroid, shot):  # Or your custom collision method
+                    asteroid.split()  # Remove the asteroid
+                    shot.kill()      # Remove the bullet
         
         
         screen.fill("black")

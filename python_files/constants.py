@@ -12,3 +12,7 @@ PLAYER_SPEED = 200
 # Shot constants
 SHOT_RADIUS = 5
 PLAYER_SHOOT_SPEED = 500
+
+# At the top of your file with other constants
+PLAYER_SHOOT_COOLDOWN = 0.3  # 0.3 seconds between shots
+ASTEROID_MIN_RADIUS = 10
